@@ -1,0 +1,124 @@
+# Establecemos todas las configuraciones para la bolsa de valores 35 y los 10 principales componenetes del mismo en función de su ponderación.
+# El total de la ponderación de estos 10 componentes son el 70,79% del total de la ponderación.
+# Información obtenida de http://www.bolsamadrid.es/docs/SBolsas/InformesSB/FS-Ibex35_ESP.pdf
+# IBEX35
+# Santander (SAN): 12,67% 
+# Iberdrola (IBE): 11,76%
+# Inditex (ITX): 11,73%
+# BBVA (BBVA): 6.84%
+# Telefónica (TEF): 6,77%
+# Amadeus IT (AMS): 6,21%
+# Repsol (REP): 4,29%
+# Ferrovial (FER): 4,01%
+# Caixabank (CABK): 3.42%
+# AENA (AENA): 3,09%
+IBEX35:
+    url: 'https://es.investing.com/indices/spain-35-historical-data'
+    columns: 
+        - fecha
+        - ultimo
+        - apertura
+        - maximo
+        - minimo
+        - vol
+        - variacion
+SAN:
+    url: 'https://es.investing.com/equities/banco-santander-historical-data'
+    columns: 
+        - fecha
+        - ultimo
+        - apertura
+        - maximo
+        - minimo
+        - vol
+        - variacion
+IBE:
+    url: 'https://es.investing.com/equities/iberdrola-historical-data'
+    columns: 
+        - fecha
+        - ultimo
+        - apertura
+        - maximo
+        - minimo
+        - vol
+        - variacion
+ITX:
+    url: 'https://es.investing.com/equities/inditex-historical-data'
+    columns: 
+        - fecha
+        - ultimo
+        - apertura
+        - maximo
+        - minimo
+        - vol
+        - variacion
+BBVA:
+    url: 'https://es.investing.com/equities/bbva-historical-data'
+    columns: 
+        - fecha
+        - ultimo
+        - apertura
+        - maximo
+        - minimo
+        - vol
+        - variacion
+TEF:
+    url: 'https://es.investing.com/equities/telefonica-historical-data'
+    columns: 
+        - fecha
+        - ultimo
+        - apertura
+        - maximo
+        - minimo
+        - vol
+        - variacion
+AMS:
+    url: 'https://es.investing.com/equities/amadeus-historical-data'
+    columns: 
+        - fecha
+        - ultimo
+        - apertura
+        - maximo
+        - minimo
+        - vol
+        - variacion
+REP:
+    url: 'https://es.investing.com/equities/repsol-ypf-historical-data'
+    columns: 
+        - fecha
+        - ultimo
+        - apertura
+        - maximo
+        - minimo
+        - vol
+        - variacion
+FER:
+    url: 'https://es.investing.com/equities/grupo-ferrovial-historical-data'
+    columns: 
+        - fecha
+        - ultimo
+        - apertura
+        - maximo
+        - minimo
+        - vol
+        - variacion
+CABK:
+    url: 'https://es.investing.com/equities/caixabank-sa-historical-data'
+    columns: 
+        - fecha
+        - ultimo
+        - apertura
+        - maximo
+        - minimo
+        - vol
+        - variacion
+AENA:
+    url: 'https://es.investing.com/equities/aena-aeropuertos-sa-historical-data'
+    columns: 
+        - fecha
+        - ultimo
+        - apertura
+        - maximo
+        - minimo
+        - vol
+        - variacion
