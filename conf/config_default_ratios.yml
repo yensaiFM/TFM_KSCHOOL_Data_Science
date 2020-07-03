@@ -1,0 +1,220 @@
+SAN:
+    url: 'https://www.expansion.com/mercados/bolsa/recomendaciones/analisis-fundamental/s/santander_M.SAN.html'
+    columns_old:
+        - 'PER'
+        - 'Precio / Cash flow'
+        - 'Precio / Valor contable'
+        - 'ROE'
+        - 'Dividendo neto por accion'
+        - 'Rentabilidad por dividendo'
+        - 'Beneficio neto (millones)'
+        - 'EBITDA (millones)'
+        - 'BPA'
+    columns: 
+        - per
+        - precio_div_cash_flow
+        - precio_valor_contable
+        - roe
+        - dividendo_neto_por_accion
+        - rentabilidad_por_dividendo
+        - b_neto
+        - ebitda
+        - bpa
+IBE:
+    url: 'https://www.expansion.com/mercados/bolsa/recomendaciones/analisis-fundamental/i/iberdrola_M.IBE.html'
+    columns_old:
+        - 'PER'
+        - 'Precio / Cash flow'
+        - 'Precio / Valor contable'
+        - 'ROE'
+        - 'Dividendo neto por accion'
+        - 'Rentabilidad por dividendo'
+        - 'Beneficio neto (millones)'
+        - 'EBITDA (millones)'
+        - 'BPA'
+    columns: 
+        - per
+        - precio_div_cash_flow
+        - precio_valor_contable
+        - roe
+        - dividendo_neto_por_accion
+        - rentabilidad_por_dividendo
+        - b_neto
+        - ebitda
+        - bpa
+ITX:
+    url: 'https://www.expansion.com/mercados/bolsa/recomendaciones/analisis-fundamental/i/inditex_M.ITX.html'
+    columns_old:
+        - 'PER'
+        - 'Precio / Cash flow'
+        - 'Precio / Valor contable'
+        - 'ROE'
+        - 'Dividendo neto por accion'
+        - 'Rentabilidad por dividendo'
+        - 'Beneficio neto (millones)'
+        - 'EBITDA (millones)'
+        - 'BPA'
+    columns: 
+        - per
+        - precio_div_cash_flow
+        - precio_valor_contable
+        - roe
+        - dividendo_neto_por_accion
+        - rentabilidad_por_dividendo
+        - b_neto
+        - ebitda
+        - bpa
+BBVA:
+    url: 'https://www.expansion.com/mercados/bolsa/recomendaciones/analisis-fundamental/b/bbva_M.BBVA.html'
+    columns_old:
+        - 'PER'
+        - 'Precio / Cash flow'
+        - 'Precio / Valor contable'
+        - 'ROE'
+        - 'Dividendo neto por accion'
+        - 'Rentabilidad por dividendo'
+        - 'Beneficio neto (millones)'
+        - 'EBITDA (millones)'
+        - 'BPA'
+    columns: 
+        - per
+        - precio_div_cash_flow
+        - precio_valor_contable
+        - roe
+        - dividendo_neto_por_accion
+        - rentabilidad_por_dividendo
+        - b_neto
+        - ebitda
+        - bpa
+TEF:
+    url: 'https://www.expansion.com/mercados/bolsa/recomendaciones/analisis-fundamental/t/telefonica_M.TEF.html'
+    columns_old:
+        - 'PER'
+        - 'Precio / Cash flow'
+        - 'Precio / Valor contable'
+        - 'ROE'
+        - 'Dividendo neto por accion'
+        - 'Rentabilidad por dividendo'
+        - 'Beneficio neto (millones)'
+        - 'EBITDA (millones)'
+        - 'BPA'
+    columns: 
+        - per
+        - precio_div_cash_flow
+        - precio_valor_contable
+        - roe
+        - dividendo_neto_por_accion
+        - rentabilidad_por_dividendo
+        - b_neto
+        - ebitda
+        - bpa
+AMS:
+    url: 'https://www.expansion.com/mercados/bolsa/recomendaciones/analisis-fundamental/a/amadeusitgroup_M.AMS.html'
+    columns_old:
+        - 'PER'
+        - 'Precio / Cash flow'
+        - 'Precio / Valor contable'
+        - 'ROE'
+        - 'Dividendo neto por accion'
+        - 'Rentabilidad por dividendo'
+        - 'Beneficio neto (millones)'
+        - 'EBITDA (millones)'
+        - 'BPA'
+    columns: 
+        - per
+        - precio_div_cash_flow
+        - precio_valor_contable
+        - roe
+        - dividendo_neto_por_accion
+        - rentabilidad_por_dividendo
+        - b_neto
+        - ebitda
+        - bpa
+REP:
+    url: 'https://www.expansion.com/mercados/bolsa/recomendaciones/analisis-fundamental/r/repsol_M.REP.html'
+    columns_old:
+        - 'PER'
+        - 'Precio / Cash flow'
+        - 'Precio / Valor contable'
+        - 'ROE'
+        - 'Dividendo neto por accion'
+        - 'Rentabilidad por dividendo'
+        - 'Beneficio neto (millones)'
+        - 'EBITDA (millones)'
+        - 'BPA'
+    columns: 
+        - per
+        - precio_div_cash_flow
+        - precio_valor_contable
+        - roe
+        - dividendo_neto_por_accion
+        - rentabilidad_por_dividendo
+        - b_neto
+        - ebitda
+        - bpa
+FER:
+    url: 'https://www.expansion.com/mercados/bolsa/recomendaciones/analisis-fundamental/f/ferrovial_M.FER.html'
+    columns_old:
+        - 'PER'
+        - 'Precio / Cash flow'
+        - 'Precio / Valor contable'
+        - 'ROE'
+        - 'Dividendo neto por accion'
+        - 'Rentabilidad por dividendo'
+        - 'Beneficio neto (millones)'
+        - 'EBITDA (millones)'
+        - 'BPA'
+    columns: 
+        - per
+        - precio_div_cash_flow
+        - precio_valor_contable
+        - roe
+        - dividendo_neto_por_accion
+        - rentabilidad_por_dividendo
+        - b_neto
+        - ebitda
+        - bpa
+CABK:
+    url: 'https://www.expansion.com/mercados/bolsa/recomendaciones/analisis-fundamental/c/caixabank_M.CABK.html'
+    columns_old:
+        - 'PER'
+        - 'Precio / Cash flow'
+        - 'Precio / Valor contable'
+        - 'ROE'
+        - 'Dividendo neto por accion'
+        - 'Rentabilidad por dividendo'
+        - 'Beneficio neto (millones)'
+        - 'EBITDA (millones)'
+        - 'BPA'
+    columns: 
+        - per
+        - precio_div_cash_flow
+        - precio_valor_contable
+        - roe
+        - dividendo_neto_por_accion
+        - rentabilidad_por_dividendo
+        - b_neto
+        - ebitda
+        - bpa
+AENA:
+    url: 'https://www.expansion.com/mercados/bolsa/recomendaciones/analisis-fundamental/a/aena_M.AENA.html'
+    columns_old:
+        - 'PER'
+        - 'Precio / Cash flow'
+        - 'Precio / Valor contable'
+        - 'ROE'
+        - 'Dividendo neto por accion'
+        - 'Rentabilidad por dividendo'
+        - 'Beneficio neto (millones)'
+        - 'EBITDA (millones)'
+        - 'BPA'
+    columns: 
+        - per
+        - precio_div_cash_flow
+        - precio_valor_contable
+        - roe
+        - dividendo_neto_por_accion
+        - rentabilidad_por_dividendo
+        - b_neto
+        - ebitda
+        - bpa
