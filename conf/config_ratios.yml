@@ -1,0 +1,32 @@
+# Obtenemos información de otras métricas de la página web https://www.expansion.com/mercados/cotizaciones/indices/ibex35_I.IB.html
+RATIOS:
+    url: 'https://www.expansion.com/mercados/cotizaciones/indices/ibex35_I.IB.html'
+    columns_scraping: 
+        - componente
+        - per
+        - bpa
+        - rentabilidad_por_dividendo
+        - precio_div_cash_flow
+        - precio_valor_contable
+        - ebitda
+        - b_neto
+    columns: 
+        - fecha
+        - per
+        - bpa
+        - rentabilidad_por_dividendo
+        - precio_div_cash_flow
+        - precio_valor_contable
+        - ebitda
+        - b_neto
+VALORES:
+    SANTANDER: 'SAN'
+    IBERDROLA: 'IBE'
+    INDITEX: 'ITX'
+    BBVA: 'BBVA'
+    TELEFÓNICA: 'TEF'
+    AMADEUS IT GROUP: 'AMS'
+    REPSOL: 'REP'
+    FERROVIAL: 'FER'
+    CAIXABANK: 'CABK'
+    AENA: 'AENA'
