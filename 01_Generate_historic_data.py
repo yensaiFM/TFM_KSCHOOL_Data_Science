@@ -175,7 +175,7 @@ def save_historic_data(component, columns, final_historic_data, logger):
     dir_filename = './dataset/'+component
     if not os.path.exists(dir_filename):
         os.makedirs(dir_filename)
-    filename = './dataset/' + component + '/test_final_historic_data_' + component + '.csv'
+    filename = './dataset/' + component + '/final_historic_data_with_metrics_' + component + '.csv'
     if not os.path.isfile(filename):
         final_historic_data.to_csv(filename, header=columns, index=False)
         logger.info('-- final file:' + filename)
@@ -201,8 +201,11 @@ def main():
         
         # Eliminamos los valores duplicados
         final_historic_data_with_pib.drop_duplicates(subset="fecha", keep="last", inplace=True)
+        # Eliminamos las columnas "trimestre_anio" y "mes_anio"
+        columns_drop = ["trimestre_anio", "mes_anio"]
+        final_historic_data_with_pib = final_historic_data_with_pib.drop(columns_drop, axis=1)
         
-        columns_historic_data = ["fecha","ultimo","apertura","maximo","minimo","vol","variacion","trimestre_anio","mes_anio","deuda_publica","ipc","tasa_paro","pib"]
+        columns_historic_data = ["fecha","ultimo","apertura","maximo","minimo","vol","variacion","deuda_publica","ipc","tasa_paro","pib"]
         save_historic_data(item, columns_historic_data, final_historic_data_with_pib, logger)
         
 
