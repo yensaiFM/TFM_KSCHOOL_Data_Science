@@ -168,14 +168,17 @@ def add_pib(component, final_historic_data, logger):
     return final_historic_data_with_pib
     
     
-def save_historic_data(component, columns, final_historic_data, logger):
+def save_historic_data(component, columns, final_historic_data, filter_year, logger):
     logger.info('-- save_historic_data > component::' + component)
         
     # Validamos si existe el directorio y si no existe lo creamos
     dir_filename = './dataset/'+component
     if not os.path.exists(dir_filename):
         os.makedirs(dir_filename)
-    filename = './dataset/' + component + '/final_historic_data_with_metrics_' + component + '.csv'
+    if(filter_year==False):
+        filename = './dataset/' + component + '/final_historic_data_with_metrics_' + component + '_all.csv'
+    else:
+        filename = './dataset/' + component + '/final_historic_data_with_metrics_' + component + '_filter_by_20150212.csv'
     if not os.path.isfile(filename):
         final_historic_data.to_csv(filename, header=columns, index=False)
         logger.info('-- final file:' + filename)
@@ -186,10 +189,11 @@ def save_historic_data(component, columns, final_historic_data, logger):
 def main():
     logger = set_timed_rotating_log('logs/historic_data.log')
     components = ['IBEX35','AENA','AMS','BBVA','CABK','FER','IBE','ITX','REP','SAN','TEF']
+    filter_year = False
 
     logger.info('Inicio generate historic data')
     for item in components:
-        final_historic_data = get_historic_data(item, False, logger)
+        final_historic_data = get_historic_data(item, filter_year, logger)
         final_historic_data_script = get_historic_data_script(item, logger)
         # Juntamos los dos dataframes
         final_historic_data_concat = pd.concat([final_historic_data, final_historic_data_script], axis=0, ignore_index=True)
@@ -206,7 +210,7 @@ def main():
         final_historic_data_with_pib = final_historic_data_with_pib.drop(columns_drop, axis=1)
         
         columns_historic_data = ["fecha","ultimo","apertura","maximo","minimo","vol","variacion","deuda_publica","ipc","tasa_paro","pib"]
-        save_historic_data(item, columns_historic_data, final_historic_data_with_pib, logger)
+        save_historic_data(item, columns_historic_data, final_historic_data_with_pib, filter_year, logger)
         
 
 if __name__ == "__main__":
