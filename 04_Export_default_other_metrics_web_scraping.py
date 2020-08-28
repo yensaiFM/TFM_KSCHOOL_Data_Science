@@ -7,14 +7,14 @@ Created on Thu Apr  2 19:46:40 2020
 
 Desde las páginas de los distintos componentes del IBEX35 > Análisis. Fund se van a extraer los siguientes ratios fundamentales:
     - PER (Price earning ratio o relación precio-beneficio). Mide la relación entre el precio en bolsa de una acción y los beneficios que obtiene año tras año.
-    - Precio /Cash Flow
-    - Precio valor contable
-    - ROE
+    - Precio /Cash Flow (P/FCF o "Price to Free Cash Flow"). Este ratio relaciona la capitalización bursátil de una compañía con sus flujos de caja libres.
+    - Precio /Valor contable (PVC o P/BV o "Price /Book Value"). Se obtiene de dividir el precio de una acción por su valor teórico contable, o lo que es equivalente, dividir la capitalización bursátil entre los fondos propios.
+    - ROE. Rentabilidad sobre los recursos propios.
     - Dividendo neto por acción
-    - BPA (Beneficio por acción)
-    - Rentabilidad por dividendo (últimos 12 meses)
+    - BPA (Beneficio por acción). Cuánto de lo obtenido por la empresa como resultado de su actividad, correspondería a cada acción.
+    - Rentabilidad por dividendo (últimos 12 meses). Mide el porcentaje del precio de una acción que va a parar a los accionistas en forma de dividendo cada año.
     - Beneficio neto (millones)
-    - EBITDA
+    - EBITDA. Ganancias antes de intereses, impuestos, depreciación y amortización.
     - BPA
 Este script se ejecutará una vez a la semana para obtener los valores por defecto
 """
@@ -55,7 +55,7 @@ def save_data_in_csv(df, cols, stock_market, year ):
     dir_filename = './dataset/'+stock_market
     if not os.path.exists(dir_filename):
         os.makedirs(dir_filename)
-    filename = './dataset/'+stock_market+'/default_metrics_'+stock_market+'_'+year+'.csv'
+    filename = './dataset/'+stock_market+'/default_metrics_'+stock_market+'_'+year.strip()+'.csv'
     df.to_csv(filename, mode='w', header=cols, index=False)
 
 def main():
