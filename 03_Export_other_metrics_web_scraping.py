@@ -74,7 +74,7 @@ def main():
     url = cfg['RATIOS']['url']
     logger.info('-- url:' + url)
     # Obtener el chromeDriver necesario https://chromedriver.chromium.org/downloads
-    browser = webdriver.Chrome('./driver/chromedriver83')
+    browser = webdriver.Chrome('./driver/chromedriver85')
     browser.get(url)
     time.sleep(2)
     browser.find_element_by_xpath("//ul[@id='pestanas_modulo_valores_analisis_superior']/li[text()='Ratios']").click()
