@@ -2,7 +2,7 @@
 El objetivo del presente trabajo es desarrollar y obtener el mejor algoritmo que permita predecir a corto plazo el comportamiento del IBEX 35 utilizando técnicas de aprendizaje supervisado. Para ello se ha utilizado el histórico del IBEX 35, los históricos de los 10 principales componentes que conforman el IBEX 35 (AENA, AMS, BBVA, CABK, FER, IBE, ITX, REP, SAN, TEF), además de otras métricas genéricas como son la deuda pública, IPC, tasa de paro y PIB. 
 
 
-El presente proyecto está formado por los siguientes ficheros:
+El proyecto está formado por los siguientes ficheros:
 1. ETLs
 - 01_Generate_historic_data.py
 Este script se encarga de unificar los datos históricos con las métricas del índice IBEX 35 y los distintos componentes.
